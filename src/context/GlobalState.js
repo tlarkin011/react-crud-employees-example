@@ -6,9 +6,9 @@ const initialState = {
   employees: [
     {
       id: 1,
-      name: "Sammy",
-      location: "DigitalOcean",
-      designation: "Shark"
+      name: "Trevor Larkin",
+      location: "Phoenix, AZ",
+      designation: " Your Next Web Developer"
     }
   ]
 };
@@ -20,6 +20,7 @@ export const GlobalProvider = ({ children }) => {
 
   function addEmployee(employee) {
     dispatch({
+
       type: "ADD_EMPLOYEE",
       payload: employee
     });
